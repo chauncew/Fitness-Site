@@ -256,8 +256,13 @@ body {
 footer {
     height: 100px;
     width: 100%;
-    background-color: rgba(235, 110, 38, 0.8);}
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(27, 26, 26, 0.97);
+}
 
 .copy-para {
     margin-top: 0;
+    color: rgba(235, 110, 38, 0.8);
 }
