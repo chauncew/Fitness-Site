@@ -90,6 +90,9 @@
         padding: 0px;
         height: 100%;
     }
+    .headings {
+        border-bottom: none;
+    }
     .info2, .info3{
         height: 550px;
         width: 400px;
