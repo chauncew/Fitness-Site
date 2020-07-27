@@ -92,6 +92,7 @@
     }
     .info2, .info3{
         height: 550px;
+        width: 400px;
     }
     .heading-extra {
         font-size: 25px;
