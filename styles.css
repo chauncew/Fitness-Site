@@ -1,7 +1,84 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.vail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* color: rgba(223, 94, 19, 0.9); */
+    color: rgba(0,0,0,0.9);
+}
+
+.fitness-icon {
+    height: 74.5px;
+    width: 71px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    display: none;
+}
+
+#openIcon {
+    font-size: 35px;
+    cursor: pointer;
+    width: 95px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+
+.sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: rgba(1,1,1,0.9);
+    z-index: 10;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: all 1.2s;
+}
+
+.sideMenu a {
+    padding: 8px 100px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    display: block;
+    z-index: 11;
+    letter-spacing: 3px;
+
+}
+
+.hover:hover {
+    color: #fff;
+    width: 5%;
+    margin-left: 8px;
+}
+
+.sideMenu .closeIcon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 /*Nav Bar Styling*/
@@ -11,7 +88,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 
@@ -103,7 +180,7 @@ body {
 }
 
 .fitness {
-    font-size: 50px;
+    font-size: 48px;
     letter-spacing: 1.5px;
     font-family: 'Merienda', cursive;
     color: #fff;
@@ -156,7 +233,7 @@ body {
 
 .p2 {
     background: url('images/equip.jpg')center/cover;
-    min-height: 800px;
+    min-height: 100vh;
     background-attachment: fixed;
     border: 150px solid #fff;
     position: relative;
@@ -178,7 +255,7 @@ body {
 
 .p3 {
     background: url('images/staff.jpg')center/cover;
-    min-height: 900px;
+    min-height: 100vh;
     background-position: middle;
     background-attachment: fixed;
     background-position: top;
@@ -212,10 +289,7 @@ body {
     height: 400px;
 }
 
-.heading2 {
-    background: rgb(27, 26, 26);
-    margin: 0;
-}
+
 
 .icons {
     width: 75px;
@@ -247,6 +321,10 @@ body {
     margin: 0 50px;
 }
 
+.icons:hover {
+    cursor: pointer;
+}
+
 .paras {
     font-size: 20px;
     font-weight: bold;
@@ -269,9 +347,13 @@ footer {
 .social img{
     height: 50px;
     width: 50px;
-    background-color: rgba(235, 110, 38, 0.8);
+    background: rgba(235, 110, 38, 0.8);
     border-radius: 50%;
     margin: 10px;
+}
+
+.social img:hover {
+    background-color: #fff;
 }
 
 .copy {
@@ -285,6 +367,11 @@ footer {
     border: 2px solid rgba(235, 110, 38, 0.8);
     padding: 10px;
     border-radius: 10px;
+}
+
+.number:hover {
+    border: 2px solid #fff;
+
 }
 
 .number a {

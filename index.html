@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Jockey+One&family=Knewave&family=Merienda:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQ.css">
     <title>Blackout's Gym</title>
 </head>
 <body>
+
+    <div class="vail"></div>
     <nav class="nav">
+        <div id="openIcon" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sideMenu">
+            <a href="#" class="hover">HOME</a>
+            <a href="#" class="hover">CLASSES</a>
+            <a href="#" class="hover">EQUIPMENT</a>
+            <a href="#" class="hover">ABOUT</a>
+            <a href="#" class="hover">CONTACT</a>
+            <a href="#" class="closeIcon" onclick="closeFunction()">&times;</a>
+        </div>
+        <img src="images/icon.jpg"  class="fitness-icon" alt="Fitness Icon">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">CLASSES</a></li>
@@ -20,8 +32,9 @@
         </ul>
     </nav>
 
+
+
     <header class="header-container">
-        <!-- <img src="images/icon.jpg" class="icon" alt="fitness icon"> -->
         <p class="fitness">BLACKOUT'S FITNESS</p>
         <div class="info">
             <p class="para">Class Pricing</p>
@@ -36,8 +49,8 @@
             <span class="info1">
                 <div class="headings">
                     <h1 class="para1">Blackout's Fitness Instructors</h1>
-                    <h2>We Have The Best In The Mid West</h2>
-                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores, reprehenderit et aspernatur doloremque iste vero necessitatibus!</p>
+                    <h2 class="heading2">We Have The Best In The Mid West</h2>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores<!--reprehenderit et aspernatur doloremque iste vero necessitatibus-->!</p>
                 </div>
             </span>
         </div>
@@ -48,17 +61,17 @@
            <div class="programs">
                <img src="images/staff.png" class="icons" alt="">
                <h1>Meet The Staff</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
+               <p class="information-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
            </div>
            <div class="programs">
                <img src="images/equipment.png" class="icons" alt="">
                <h1>Check Out The Equipment</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
+               <p class="information-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
            </div>
            <div class="programs">
                <img src="images/classes.png" class="icons" alt="">
                <h1>Our Fitness Classes</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
+               <p class="information-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem sequi vero magnam modi. Iste quam quis fugiat harum ab at, repudiandae voluptates odio odit quisquam a repellat molestiae iure ipsa dicta placeat obcaecati! Debitis, asperiores iusto. Blanditiis, quia perspiciatis!</p>
            </div>
        </div>
     </section>
@@ -66,10 +79,10 @@
     <div class="p2">
         <div class="ptext2">
             <span class="info2">
-                <div class="headings">
+                <div class="headings headings2">
                     <h1 class="para2">Blackout's Equipment </h1>
-                    <h2>We Have Everything To Help You Reach Your Fitness Goals</h2>
-                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores, reprehenderit et aspernatur doloremque iste vero necessitatibus!</p>
+                    <h2 class="heading2" >We Have Everything To Help You Reach Your Fitness Goals</h2>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores!</p>
                 </div>
             </span>
         </div>
@@ -80,10 +93,10 @@
     <div class="p3">
         <div class="ptext3">
             <span class="info3">
-                <div class="headings">
+                <div class="headings headings3">
                     <h1 class="para3">Blackout's Staff </h1>
-                    <h2>Our Staff Is Knowledgeable In Every Aspect Of Fitness</h2>
-                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores, reprehenderit et aspernatur doloremque iste vero necessitatibus!</p>
+                    <h2 class="heading2 heading-extra">Our Staff Is Knowledgeable In Every Aspect Of Fitness</h2>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem debitis eligendi eius iure tenetur deleniti, dignissimos accusantium sunt facilis, architecto vitae sed quod ullam est explicabo officiis modi, officia minima doloremque vero aliquam nihil! Illo eveniet magnam quia eos quod! Aut maiores!</p>
                 </div>
             </span>
         </div>
@@ -91,9 +104,9 @@
         <footer>
             <div class="copy">
                 <p class="copy-para">&copy 2020 A Total Blackout Creation</p>
-                <p>Blackout's Fitness</p>
-                <p>1137 N. Lawler Ave</p>
-                <p>Chicago, IL 6651</p>
+                <p class="address">Blackout's Fitness</p>
+                <p class="address">1137 N. Lawler Ave</p>
+                <p class="address">Chicago, IL 60651</p>
             </div>
 
             <div class="social">
